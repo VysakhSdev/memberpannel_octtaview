@@ -751,6 +751,7 @@ export const WithdrawFunds = createAsyncThunk('addNewFund', async (fund: any) =>
         },
         config
     );
+    console.log(response.data,"response from widhraw")
 
     return response.data;
 });
@@ -829,6 +830,8 @@ export const capitalWithdrawFunds = createAsyncThunk('addNewFund', async (fund: 
         },
         config
     );
+    console.log(response,"reached")
+
 
     return response.data;
 });
